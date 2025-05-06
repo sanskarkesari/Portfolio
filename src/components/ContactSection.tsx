@@ -1,11 +1,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-<<<<<<< HEAD
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
-=======
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
->>>>>>> 4d1d2db (Initial commit)
 
 interface ContactItemProps {
   icon: React.ReactNode;
@@ -61,33 +57,19 @@ const ContactSection = () => {
                 <ContactItem 
                   icon={<Mail className="h-5 w-5" />} 
                   label="Email" 
-<<<<<<< HEAD
-                  value="your.email@example.com"
-                  link="mailto:your.email@example.com" 
-=======
                   value="sanskar4368@gmail.com"
                   
->>>>>>> 4d1d2db (Initial commit)
                 />
                 <ContactItem 
                   icon={<Phone className="h-5 w-5" />} 
                   label="Phone" 
-<<<<<<< HEAD
-                  value="+1 (555) 123-4567"
-                  link="tel:+15551234567" 
-=======
                   value="+91 6390637775"
                    
->>>>>>> 4d1d2db (Initial commit)
                 />
                 <ContactItem 
                   icon={<MapPin className="h-5 w-5" />} 
                   label="Location" 
-<<<<<<< HEAD
-                  value="San Francisco, CA" 
-=======
                   value="Tamil Nadu, India" 
->>>>>>> 4d1d2db (Initial commit)
                 />
               </CardContent>
             </Card>
@@ -96,17 +78,6 @@ const ContactSection = () => {
             <div className="flex gap-4">
               <SocialButton 
                 icon={<Github className="h-5 w-5" />} 
-<<<<<<< HEAD
-                href="https://github.com/yourusername" 
-              />
-              <SocialButton 
-                icon={<Linkedin className="h-5 w-5" />} 
-                href="https://linkedin.com/in/yourusername" 
-              />
-              <SocialButton 
-                icon={<Twitter className="h-5 w-5" />} 
-                href="https://twitter.com/yourusername" 
-=======
                 href="https://github.com/sanskarkesari" 
               />
               <SocialButton 
@@ -116,35 +87,18 @@ const ContactSection = () => {
               <SocialButton 
                 icon={<Instagram className="h-5 w-5" />} 
                 href="https://www.instagram.com/s_a_n_s.20/" 
->>>>>>> 4d1d2db (Initial commit)
               />
             </div>
           </div>
 
           <div>
             <h3 className="text-2xl font-bold mb-6">Send Me A Message</h3>
-<<<<<<< HEAD
-            <p className="mb-4 text-muted-foreground">
-              Since this is a frontend-only portfolio, there's no backend to process forms.
-              Please use one of the contact methods on the left to get in touch.
-            </p>
-=======
             
->>>>>>> 4d1d2db (Initial commit)
             <Card className="bg-portfolio-50 border-portfolio-200">
               <CardContent className="p-6">
                 <p className="font-medium text-portfolio-700">Email me directly:</p>
                 <div className="flex items-center mt-2 gap-2">
                   <Button variant="default" asChild>
-<<<<<<< HEAD
-                    <a href="mailto:your.email@example.com">
-                      <Mail className="mr-2 h-4 w-4" />
-                      your.email@example.com
-                    </a>
-                  </Button>
-                  <Button variant="outline" onClick={() => {
-                    navigator.clipboard.writeText("your.email@example.com");
-=======
                     <a href="mailto:sanskar4368@gmail.com">
                       <Mail className="mr-2 h-4 w-4" />
                       sanskar4368@gmail.com
@@ -152,7 +106,6 @@ const ContactSection = () => {
                   </Button>
                   <Button variant="outline" onClick={() => {
                     navigator.clipboard.writeText("sanskar4368@gmail.com");
->>>>>>> 4d1d2db (Initial commit)
                     alert("Email copied to clipboard!");
                   }}>
                     Copy

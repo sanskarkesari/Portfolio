@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 4d1d2db (Initial commit)
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -62,45 +58,28 @@ const ProjectDetail = () => {
         </div>
 
         {/* Main project image */}
-        <div className="bg-zinc-100 rounded-lg overflow-hidden mb-8 shadow-md">
-<<<<<<< HEAD
-          <div className="relative h-[300px] md:h-[400px] lg:h-[500px] bg-zinc-200 flex items-center justify-center">
-            <span className="text-sm text-zinc-500">Main Project Image</span>
-          </div>
-=======
+        <div className="bg-zinc-100 rounded-lg overflow-hidden mb-8 shadow-md flex items-center justify-center" style={{minHeight: '350px'}}>
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover"
+            className="w-full h-[350px] md:h-[450px] object-contain bg-white"
           />
->>>>>>> 4d1d2db (Initial commit)
         </div>
 
         {/* Additional images gallery */}
         <h3 className="text-2xl font-bold mb-6">Project Gallery</h3>
-<<<<<<< HEAD
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          {(project.additionalImages || Array(4).fill("")).map((img, idx) => (
-            <div 
-              key={idx}
-              className="relative h-[200px] md:h-[250px] bg-zinc-200 rounded-lg overflow-hidden shadow-md flex items-center justify-center"
-            >
-              <span className="text-sm text-zinc-500">Project Image {idx + 1}</span>
-            </div>
-          ))}
-        </div>
-=======
+
         {project.additionalImages && project.additionalImages.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {project.additionalImages.map((img, idx) => (
               <div 
                 key={idx}
-                className="relative h-[200px] md:h-[250px] bg-zinc-200 rounded-lg overflow-hidden shadow-md flex items-center justify-center"
+                className="relative h-[350px] md:h-[450px] bg-zinc-200 rounded-lg overflow-hidden shadow-md flex items-center justify-center"
               >
                 <img
                   src={img}
                   alt={`${project.title} screenshot ${idx + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-[350px] md:h-[450px] object-contain bg-white"
                 />
               </div>
             ))}
@@ -108,7 +87,6 @@ const ProjectDetail = () => {
         ) : (
           <div className="text-zinc-500 mb-12">No additional images available.</div>
         )}
->>>>>>> 4d1d2db (Initial commit)
 
         <div className="flex justify-center mt-12">
           <Button variant="outline" size="lg" asChild className="mr-4">

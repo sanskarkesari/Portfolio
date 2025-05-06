@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 4d1d2db (Initial commit)
 import { Card, CardContent } from '@/components/ui/card';
 import { Code, Database, Globe, Laptop, Server, Figma } from 'lucide-react';
 
@@ -39,42 +35,13 @@ const SkillCategory = ({ title, icon, skills }: SkillCategoryProps) => {
 const SkillsSection = () => {
   const skillCategories = [
     {
-<<<<<<< HEAD
-      title: 'Frontend',
-      icon: <Laptop className="h-6 w-6" />,
-      skills: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Redux', 'Next.js', 'Tailwind CSS', 'SCSS', 'Bootstrap', 'Web Accessibility']
-    },
-    {
-      title: 'Backend',
-      icon: <Server className="h-6 w-6" />,
-      skills: ['Node.js', 'Express', 'Django', 'Flask', 'RESTful APIs', 'GraphQL', 'JWT', 'OAuth']
-=======
       title: 'Programming Languages',
       icon: <Code className="h-6 w-6" />,
       skills: ['Python', 'C++'],
->>>>>>> 4d1d2db (Initial commit)
     },
     {
       title: 'Databases',
       icon: <Database className="h-6 w-6" />,
-<<<<<<< HEAD
-      skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Firebase', 'Redis', 'Mongoose', 'Sequelize']
-    },
-    {
-      title: 'DevOps',
-      icon: <Globe className="h-6 w-6" />,
-      skills: ['Git', 'GitHub', 'CI/CD', 'Docker', 'AWS', 'Heroku', 'Vercel', 'Netlify']
-    },
-    {
-      title: 'Programming',
-      icon: <Code className="h-6 w-6" />,
-      skills: ['JavaScript', 'TypeScript', 'Python', 'Java', 'C++', 'PHP']
-    },
-    {
-      title: 'Design',
-      icon: <Figma className="h-6 w-6" />,
-      skills: ['Figma', 'Adobe XD', 'Responsive Design', 'UI/UX', 'Wireframing', 'Prototyping']
-=======
       skills: ['MySQL', 'Firebase', 'MYSQL'],
     },
     {
@@ -91,7 +58,6 @@ const SkillsSection = () => {
       title: 'Other Skills',
       icon: <Globe className="h-6 w-6" />,
       skills: ['Leadership', 'Communication','Networking','Logo Design'],
->>>>>>> 4d1d2db (Initial commit)
     },
   ];
 

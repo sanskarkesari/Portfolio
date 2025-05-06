@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 4d1d2db (Initial commit)
 import { Card } from '@/components/ui/card';
 import { Briefcase, Calendar } from 'lucide-react';
 
@@ -50,55 +46,6 @@ const ExperienceItem = ({ title, company, period, location, description, isLeft 
 const ExperienceSection = () => {
   const experiences = [
     {
-<<<<<<< HEAD
-      title: 'Senior Frontend Developer',
-      company: 'Tech Innovations Inc.',
-      period: 'Jan 2022 - Present',
-      location: 'San Francisco, CA',
-      description: [
-        'Lead a team of 5 developers in building a new customer portal using React and TypeScript',
-        'Implemented CI/CD pipelines that reduced deployment time by 40%',
-        'Optimized application performance resulting in 30% faster load times',
-        'Mentored junior developers and conducted code reviews'
-      ]
-    },
-    {
-      title: 'Full Stack Developer',
-      company: 'Digital Solutions LLC',
-      period: 'Mar 2019 - Dec 2021',
-      location: 'Seattle, WA',
-      description: [
-        'Developed and maintained multiple client websites using React, Node.js, and MongoDB',
-        'Created RESTful APIs consumed by web and mobile applications',
-        'Collaborated with UX designers to implement responsive user interfaces',
-        'Participated in agile development processes and sprint planning'
-      ]
-    },
-    {
-      title: 'Web Developer',
-      company: 'CreativeTech',
-      period: 'Jun 2017 - Feb 2019',
-      location: 'Portland, OR',
-      description: [
-        'Built interactive websites using HTML, CSS, and JavaScript',
-        'Implemented responsive designs ensuring cross-browser compatibility',
-        'Worked with WordPress and custom PHP solutions',
-        'Assisted in UX/UI design and prototyping'
-      ]
-    },
-    {
-      title: 'Junior Developer',
-      company: 'StartUp Hub',
-      period: 'Jan 2016 - May 2017',
-      location: 'Austin, TX',
-      description: [
-        'Assisted in developing website features using JavaScript and jQuery',
-        'Created and maintained WordPress sites for clients',
-        'Performed testing and bug fixes',
-        'Collaborated with team members on various projects'
-      ]
-    },
-=======
       title: 'Data Science Intern',
       company: 'EvoAstra Ventures',
       period: 'Jul 2024 - Aug 2024',
@@ -110,7 +57,6 @@ const ExperienceSection = () => {
         'Contributed to data-driven decision-making by providing actionable insights.'
       ]
     }
->>>>>>> 4d1d2db (Initial commit)
   ];
 
   return (

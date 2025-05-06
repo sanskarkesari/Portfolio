@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-
-import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-=======
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Download } from 'lucide-react';
->>>>>>> 4d1d2db (Initial commit)
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -55,9 +49,6 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-<<<<<<< HEAD
-          <Button variant="default">Download CV</Button>
-=======
           <a
             href="/main resume.pdf"
             download
@@ -66,7 +57,6 @@ const Navbar = () => {
           >
             <Button variant="default">Download Resume</Button>
           </a>
->>>>>>> 4d1d2db (Initial commit)
         </nav>
 
         {/* Mobile Menu Button */}
@@ -100,9 +90,6 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-<<<<<<< HEAD
-            <Button variant="default" className="w-full">Download CV</Button>
-=======
             <a
               href="/main resume.pdf"
               download
@@ -111,7 +98,6 @@ const Navbar = () => {
             >
               <Button variant="default">Download Resume</Button>
             </a>
->>>>>>> 4d1d2db (Initial commit)
           </div>
         </nav>
       )}

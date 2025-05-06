@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 4d1d2db (Initial commit)
 import { Card, CardContent } from '@/components/ui/card';
 import { GraduationCap } from 'lucide-react';
 
@@ -40,27 +36,6 @@ const EducationItem = ({ degree, institution, period, location, description }: E
 const EducationSection = () => {
   const educationItems = [
     {
-<<<<<<< HEAD
-      degree: 'Master of Science in Computer Science',
-      institution: 'University of Technology',
-      period: '2014 - 2016',
-      location: 'San Francisco, CA',
-      description: 'Specialized in Software Engineering with a focus on web technologies and distributed systems. Completed thesis on scalable architecture for web applications.'
-    },
-    {
-      degree: 'Bachelor of Science in Computer Science',
-      institution: 'State University',
-      period: '2010 - 2014',
-      location: 'Chicago, IL',
-      description: 'Studied algorithms, data structures, software development, and computer architecture. Participated in various hackathons and programming competitions.'
-    },
-    {
-      degree: 'Full Stack Web Development Bootcamp',
-      institution: 'Tech Academy',
-      period: 'Jan - Jun 2017',
-      location: 'Online',
-      description: 'Intensive 6-month bootcamp covering modern web technologies including JavaScript frameworks, server-side development, and database management.'
-=======
       degree: 'B.Tech in Computer Science and Information Technology',
       institution: 'SRM Institute of Science and Technology',
       period: 'Aug 2022 - Present',
@@ -80,7 +55,6 @@ const EducationSection = () => {
       period: 'May 2018 - May 2019',
       location: 'Prayagraj',
       description: 'Percentage: 92%'
->>>>>>> 4d1d2db (Initial commit)
     },
   ];
 
