@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Github, ArrowRight } from 'lucide-react';
+import { Github, ArrowRight, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface ProjectCardProps {
@@ -10,10 +10,11 @@ interface ProjectCardProps {
   image: string;
   tags: string[];
   githubUrl: string;
+  liveUrl?: string;
   index: number;
 }
 
-const ProjectCard = ({ title, description, image, tags, githubUrl, index }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, image, tags, githubUrl, liveUrl, index }: ProjectCardProps) => {
   return (
     <Card className="overflow-hidden group transition-all duration-300 hover:shadow-lg border border-border h-full flex flex-col">
       <div className="relative overflow-hidden rounded-lg">
@@ -35,12 +36,22 @@ const ProjectCard = ({ title, description, image, tags, githubUrl, index }: Proj
         <CardDescription>{description}</CardDescription>
       </CardContent>
       <CardFooter className="flex justify-between">
-        <Button variant="outline" size="sm" asChild>
-          <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-            <Github className="h-4 w-4 mr-2" />
-            Code
-          </a>
-        </Button>
+        <div className="flex gap-2">
+          <Button variant="outline" size="sm" asChild>
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+              <Github className="h-4 w-4 mr-2" />
+              Code
+            </a>
+          </Button>
+          {liveUrl && (
+            <Button variant="outline" size="sm" asChild>
+              <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="h-4 w-4 mr-2" />
+                Demo
+              </a>
+            </Button>
+          )}
+        </div>
         <Button size="sm" asChild>
           <Link to={`/project/${index}`}>
             View Details
