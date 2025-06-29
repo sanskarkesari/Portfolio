@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Github } from 'lucide-react';
+import { ArrowLeft, Github, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useEffect } from 'react';
@@ -88,13 +88,21 @@ const ProjectDetail = () => {
           <div className="text-zinc-500 mb-12">No additional images available.</div>
         )}
 
-        <div className="flex justify-center mt-12">
-          <Button variant="outline" size="lg" asChild className="mr-4">
+        <div className="flex justify-center mt-12 gap-4">
+          <Button variant="outline" size="lg" asChild>
             <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5 mr-2" />
               View Code
             </a>
           </Button>
+          {project.liveUrl && (
+            <Button variant="default" size="lg" asChild>
+              <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="h-5 w-5 mr-2" />
+                Live Demo
+              </a>
+            </Button>
+          )}
         </div>
       </div>
     </div>
