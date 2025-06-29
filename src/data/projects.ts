@@ -10,6 +10,23 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+    {
+    title: 'ParkIt',
+    description: 'It is SaaS project which helps in parking system using QR tech and UPI payments, creating sustainable and scalable parking mangement',
+    longDescription: ['Details for ParkIt will be added here.'],
+    image: '/parkit.png',
+    additionalImages: [
+      '/parkit1.png',
+      '/parkit2.png',
+      '/parkit3.png',
+      '/parkit4.png',
+      '/parkit5.png',
+      '/parkit6.png',
+    ],
+    tags: ['Parking System', 'University,Colleges,Malls', 'SaaS', 'Technology Application'],
+    githubUrl: 'https://github.com/abhinavmaity/ParkIt.git',
+    liveUrl: 'https://parkit-chi.vercel.app/',
+  },
   {
     title: 'GateKeeper',
     description: 'A centralized web app enhancing residential community management through secure access, real-time communication, visitor tracking, and service request handling.',
@@ -25,6 +42,7 @@ export const projects: Project[] = [
     ],
     tags: ['Community Management', 'Resident Portal', 'Visitor Management', 'Maintenance Tracking', 'Digital Society', 'Smart Living'],
     githubUrl: 'https://github.com/sanskarkesari/GateKeeper.git',
+    liveUrl: 'https://gate-keeper-eight.vercel.app/',
   },
   {
     title: 'Certificate Locker',
@@ -37,6 +55,7 @@ export const projects: Project[] = [
     ],
     tags: ['Web Application', 'Certificate Management', 'Cloud Storage', 'Firebase'],
     githubUrl: 'https://github.com/sanskarkesari/Certificate-Locker.git',
+    liveUrl: '',
   },
   {
     title: 'Customer Churn Analysis',
@@ -51,6 +70,7 @@ export const projects: Project[] = [
     ],
     tags: ['Customer Churn', 'Telecom', 'Machine Learning', 'EDA', 'Data Science', 'Customer Retention'],
     githubUrl: 'https://github.com/sanskarkesari/Customer-Churn-Analysis.git',
+    liveUrl: '',
   },
   {
     title: 'AgriConnect',
@@ -65,6 +85,7 @@ export const projects: Project[] = [
     ],
     tags: ['AI in Farming', 'Sugarcane Yield Prediction', 'Crop Disease Detection', 'Weather-Based Guidelines', 'Multilingual Support', 'Machine Learning', 'Sustainable Agriculture'],
     githubUrl: 'https://github.com/sanskarkesari/AgriConnect_Sugarcane_Helper_for_Farmers.git',
+    liveUrl: 'https://agriconnectsugarcanehelperforfarmers-production.up.railway.app/',
   },
   {
     title: 'Restore',
@@ -79,5 +100,6 @@ export const projects: Project[] = [
     ],
     tags: ['SustainableEcommerce', 'EcoFriendly', 'BuyAndResell', 'ReuseReduceRecycle'],
     githubUrl: 'https://github.com/sanskarkesari/ReStore.git',
+    liveUrl: 'https://re-store-sand.vercel.app/',
   },
 ];
